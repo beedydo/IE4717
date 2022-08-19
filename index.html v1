@@ -1,0 +1,32 @@
+<!doctype html>
+	<html lang="en"> 
+		<head> 
+			<title>Electronics Store</title> 
+			<meta charset=“utf-8”>
+			<link rel="stylesheet" href="color.css">			
+		</head> 
+		
+		<body>
+			<header>
+				<h1>Electronics Store</h1>
+			</header>
+			
+			<nav>
+				<b>	<a href="index.html">Home</a> &nbsp; 
+					<a href="products.html">Products </a> &nbsp; 
+					<a href="contact.html">Contact</a>
+				</b>
+			</nav>
+			
+			<div>
+				<h2 id="head2">Meeting Your Needs</h2>
+				<p>Whether you are looking for something small like a mouse or something big like a computer, we have it all!</p>
+			</div>
+			
+			<footer>
+				<small>
+					<i>Copyright &copy; 2022 Electronics Store</i>
+				</small>
+			</footer>
+		</body> 
+	</html>
