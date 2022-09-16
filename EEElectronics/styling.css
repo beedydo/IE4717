@@ -1,0 +1,184 @@
+/*ALL PAGES*/
+	body 
+	{
+		background-color:#bbeafe;
+		background-image: url(bg.png);
+		font-family: Verdana,Arial, sans serif;
+		font-size:0.8em;
+		margin:auto;
+		width:95%; min-width: 800px;
+	}
+		 
+	header
+	{ 
+		background-color: #ffffff;
+		background-position: center;
+		margin-top:20px;
+	}
+
+	footer
+	{ 
+		border-style:none;
+		text-align:center;
+		background-color: #84d9fe;
+		padding:15px;
+			
+	}
+
+	nav a:link 
+	{
+	    color: Black;
+	}
+
+	nav a:visited 
+	{
+	    color: grey;
+	}
+
+	#wrapper 
+	{ background-color: #84d9fe;
+	           min-width:850px;
+			   box-shadow: 4px 4px 4px #330B03;
+	} 
+
+	#logo 
+	{	border-style:none;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+			width:300px;
+			height:300px;
+	}
+
+	nav
+	{	
+		font-weight: bold;
+		text-align: center;
+		font-size: 1.5em;
+		float: left;
+		margin-right:auto;
+		width: 150px;
+		height: 328px;
+	}
+
+	nav ul
+	{
+		list-style-type:none;
+		padding-left: 0px;
+		}
+
+	nav a {	text-decoration:none;} 
+
+	h1 
+	{
+	    color: #350004;
+	    margin-top: 0px;
+	    padding: 25px 0px 0px 25px;
+	}
+
+
+
+/*INDEX(STORE) PAGE*/
+
+	#rightcolumn 
+		{
+			margin-left: 155px;
+				   background-color: #bbeafe;
+				   padding-bottom:100px;
+		}
+
+	#nobullet
+		{
+			list-style-type:none;
+		}
+
+	#list	
+		{
+			list-style-image: url("bullet.png")
+		}
+
+	#conpic
+		{
+			float:left;
+			width:400px;
+			height:250px;
+			padding:0px 150px 0px 50px;
+		}
+
+
+/*COMPUTER PAGE*/
+
+	table
+	{
+		margin:auto;
+	}
+
+	#menu td
+	{
+		padding:10px;
+	}
+	.drink
+	{
+		text-align: center;
+	}
+
+	.oddrow
+	{
+		background-color:#d1b38e;
+	}
+
+
+/*TABLET PAGE*/
+
+	thead
+	{
+		text-align:left;
+		background-color:#bbeafe;
+	}
+
+	#performer td
+	{
+		padding:10px;
+	}
+
+	#shiftp
+	{
+		padding-left:30px;
+	}
+
+
+/*SHOPPING CART PAGE*/
+	form 
+	{
+	    font-family: Arial, Helvetica, sans-serif;
+	    padding: 10px 15px 30px 15px;
+	}
+
+	label 
+	{
+	    float: left;
+	    display: block;
+	    width: 100px;
+	    text-align: right;
+	    padding-right: 10px;
+	    margin-top: 10px;
+	}
+
+	input[type=text] 
+	{
+	    width: 150px;
+	}
+
+	input,
+	textarea 
+	{
+	    font-family: Arial, Helvetica, sans-serif;
+	    margin-top: 10px;
+	    display: block;
+	    font-size: 0.8em;
+	}
+
+	input[type=submit],
+	input[type=reset] {
+	    margin-left: 10px;
+	}
