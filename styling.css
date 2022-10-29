@@ -7,11 +7,6 @@ body {
 		margin:auto;
 		width:80%; min-width: 800px;
 }
-	 
-/*header{ background-color: #ffffff;
-		background-position: center;
-		margin-top:20px;
-}*/
 
 footer{ border-style:none;
 		text-align:center;
@@ -84,7 +79,11 @@ h1 {
 	hieght:50px;
 }
 
-
+.model{
+	text-align:left; 
+	padding-left:50px; 
+	border-bottom:5px solid gray;
+}
 
 
 
@@ -92,35 +91,18 @@ h1 {
 
 /*INDEX PAGE*/
 
-
-
-
 #content {
 			background-color: #a9e5ff;
 			padding-bottom:50px;
 			text-align:center;
 }
 
-#list	{
-	list-style-image: url("bullet.png");
-	padding-right:20px;
-}
-
-#nobullet{
-	list-style-type:none;
-}
-
-#conpic{
-	float:left;
-	width:300px;
-	min-height:150px;
-	padding:0px 150px 0px 50px;
-}
 
 
 
 
-/*MENU PAGE*/
+
+/*STORE PAGE*/
 
 table{
 	margin:auto;
@@ -145,16 +127,16 @@ input, radio{
 
 
 
-/*MUSIC PAGE*/
+/*COMPUTER PAGE*/
 
 thead{
 	text-align:left;
 	background-color:#E2D1B1;
 }
 
-#performer td{
+/*#performer td{
 	padding:10px;
-}
+}*/
 
 #shiftp{
 	padding-left:25px;
@@ -162,7 +144,7 @@ thead{
 
 
 
-/*JOBS PAGE*/
+/*TABLETS PAGE*/
 form {
     font-family: Verdana, Arial, sans-serif;
     padding: 10px 15px 0px 15px;
@@ -174,6 +156,13 @@ input[type=text] {
 
 input, textarea {
     font-family: Verdana, Arial, sans-serif;
+    margin-top: 10px;
+	display:inline;
+    font-size: 0.8em;
+}
+
+select{
+	font-family: Verdana, Arial, sans-serif;
     margin-top: 10px;
 	display:inline;
     font-size: 0.8em;

@@ -12,64 +12,14 @@
 				$prices=array();
 	
 			 // connect to database 
-				@ $db = new mysqli('localhost', 'root', '', 'EEElectronics');
+				@ $db = new mysqli('localhost', 'root', '', 'eeelectronics');
 				
 			// selecting price from database	
 				$query="select * from price ";
 				$result=$db->query($query);
 				$num_results=$result->num_rows;
 				
-				for($i=0;$i<$num_results;$i++){
-					$row=$result->fetch_assoc();
-					$prices[$i]=$row["Price"];
-				}
-
 				
-				if(isset($_POST['update'])){
-				// create short variable names
-					$updatehse= $_POST['hse'];
-					$updatesingau= $_POST['singleau'];
-					$updatedoubau= $_POST['doubleau'];
-					$updatesingcap= $_POST['singlecap'];
-					$updatedoubcap= $_POST['doublecap'];
-					
-					for($i=0;$i<$num_results;$i++){
-						$row=$result->fetch_assoc();
-						switch($i){ 
-							case(0):
-								if (isset($_POST['changehse'])){
-									$update="Update Price set `Price`= '$updatehse' where `Type`='House' ";
-									$db->query($update);
-								}
-								break;
-							case(1):
-								if (isset($_POST['changesingleau'])){
-									$update="Update Price set `Price`= '$updatesingau' where `Type`='SingleAu' ";
-									$db->query($update);
-								}
-								break;
-							case(2):		
-								if (isset($_POST['changedoubleau'])){
-									$update="Update Price set `Price`= '$updatedoubau' where `Type`='DoubleAu' ";
-									$db->query($update);
-								}
-								break;
-							case(3):
-								if (isset($_POST['changesingcap'])){
-									$update="Update Price set `Price`= '$updatesingcap' where `Type`='SingleCap' ";
-									$db->query($update);
-								}
-								break;
-							case(4):
-								if (isset($_POST['changedoubcap'])){
-									$update="Update Price set `Price`= '$updatedoubcap' where `Type`='DoubleCap' ";
-									$db->query($update);
-								}
-								break;
-						}
-					}
-					header('Location:price.php');	
-				}
 				
 				$db->close();
 			?>
@@ -83,7 +33,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="store.php">Store</a></li>
 							<li><a href="computers.php">Computers</a></li>
-							<li><a href="tablets.html">Tablets</a></li>
+							<li><a href="tablets.php">Tablets</a></li>
 							<li><a href="checkout.php">Checkout</a></li>
 							<li><a href="adminpage.php">Admin page</a></li>
 						</ul>
@@ -147,8 +97,11 @@
 				</div>
 				<footer>
 					<small>
-						<p><i>Copyright &copy; 2022 JavaJam Coffee House</i></p>
-						<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+						<p><i>Copyright &copy; 2022 EEElectronics</i></p>
+						<p>Contact us at:
+							<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+							<a href="mailto:wendae@tan.com"><p><i>wendae@tan.com</p></i></a>
+						</p>
 					</small>
 				</footer>
 			</div>

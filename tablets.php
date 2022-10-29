@@ -6,68 +6,24 @@
 			<link rel="stylesheet" href="styling.css">
 			<script type="text/javascript" src="javascript.js"></script>
 			<?php
-				$prices=array();
 	
 			 // connect to database 
-				@ $db = new mysqli('localhost', 'root', '', 'EEElectronics');
+				@ $db = new mysqli('localhost', 'root', '', 'eeelectronics');
 				
 			// selecting price from database	
-				$query="select * from price where Type = 'Computer' ";
+				$query="select * from products where Type = 'Tablet' ";
 				$result=$db->query($query);
 				$num_results=$result->num_rows;
 				
 				for($i=0;$i<$num_results;$i++){
 					$row=$result->fetch_assoc();
-					$prices[$i]=$row["Price"];
-				}
-
-				
-				/*if(isset($_POST['update'])){
-				// create short variable names
-					$updatehse= $_POST['hse'];
-					$updatesingau= $_POST['singleau'];
-					$updatedoubau= $_POST['doubleau'];
-					$updatesingcap= $_POST['singlecap'];
-					$updatedoubcap= $_POST['doublecap'];
+					$model[$i]=$row["Product_Model"];
+					$picture[$i]=$row["Picture"];
+					$description[$i]=$row["Description"];
+					$price[$i]=$row["Price"];
+					$product_type[$i]=$row["Type"];
 					
-					for($i=0;$i<$num_results;$i++){
-						$row=$result->fetch_assoc();
-						switch($i){ 
-							case(0):
-								if (isset($_POST['changehse'])){
-									$update="Update Price set `Price`= '$updatehse' where `Type`='House' ";
-									$db->query($update);
-								}
-								break;
-							case(1):
-								if (isset($_POST['changesingleau'])){
-									$update="Update Price set `Price`= '$updatesingau' where `Type`='SingleAu' ";
-									$db->query($update);
-								}
-								break;
-							case(2):		
-								if (isset($_POST['changedoubleau'])){
-									$update="Update Price set `Price`= '$updatedoubau' where `Type`='DoubleAu' ";
-									$db->query($update);
-								}
-								break;
-							case(3):
-								if (isset($_POST['changesingcap'])){
-									$update="Update Price set `Price`= '$updatesingcap' where `Type`='SingleCap' ";
-									$db->query($update);
-								}
-								break;
-							case(4):
-								if (isset($_POST['changedoubcap'])){
-									$update="Update Price set `Price`= '$updatedoubcap' where `Type`='DoubleCap' ";
-									$db->query($update);
-								}
-								break;
-						}
-					}
-					header('Location:price.php');	
-				}*/
-				
+				}
 				$db->close();
 			?>
 		</head> 
@@ -79,36 +35,60 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="store.php">Store</a></li>
-							<li><a href="computers.html">Computers</a></li>
-							<li><a href="tablets.html">Tablets</a></li>
+							<li><a href="computers.php">Computers</a></li>
+							<li><a href="tablets.php">Tablets</a></li>
 							<li><a href="checkout.php">Checkout</a></li>
 							<li><a href="adminpage.php">Admin page</a></li>
 						</ul>
 					</nav>
 					
 					
-					<div id="rightcolumn">
+					<div id="content">
 						<div id="shiftp">
 							<h1><b>Want to take notes quickly? These tablets will be right up your alley!</b></h1>
 						</div>
-							<form method="Post" action="show_post.php">
-							  <label for="name" class="jobslabel">*Name:</label>
-							  <input type="text" name="name" id="name" placeholder="Enter your name here" required onchange="checkname()" class="jobs">
-							  <label for="email" class="jobslabel">*E-mail:</label>
-							  <input type="text" name="email" id="email" placeholder="Enter your Email-ID here" required onchange="checkemail()" class="jobs">
-							  <label for="date" class="jobslabel">Start Date</label>
-							  <input type="date" name="date" id="date" onchange="checkdate()" class="jobs">
-							  <label for="experience" class="jobslabel">*Experience:</label>
-							  <textarea name="experience" id="experience" placeholder="Enter your past experience here" rows="4" cols="35" required class="jobs"></textarea>
-							  <input type="reset" value="Clear" id="clear"><br>
-							  <input type="submit" value="Apply Now" id="submit">
-							</form>
+							<?php
+								
+								//for loop to print all items
+								for($i=0;$i<$num_results;$i++){
+									echo"
+										<h2 class='model'>Model: $model[$i]</h2>
+																						
+										<table border='3' style='border:black;'>
+											<tr>
+												<th rowspan='3 '>
+													<img src='$picture[$i]' style='width: 300px; height:200px;'>
+												</th>
+												
+												<td>
+													<p>Description: $description[$i]</p>
+												</td>
+											</tr>
+											<tr>
+													<td>
+														<p>Price:$$price[$i]</p>
+													</td>
+											</tr>
+											<tr>	
+												<td>
+													<input type='submit' value = ' Add to Cart'>
+												</td>
+											</tr>
+										</table>
+										";
+									
+								}
+							
+							?>
 					</div>
 				</div>
 				<footer>
 					<small>
-						<p><i>Copyright &copy; 2022 JavaJam Coffee House</i></p>
-						<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+						<p><i>Copyright &copy; 2022 EEElectronics</i></p>
+						<p>Contact us at:
+							<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+							<a href="mailto:wendae@tan.com"><p><i>wendae@tan.com</p></i></a>
+						</p>
 					</small>
 				</footer>
 			</div>

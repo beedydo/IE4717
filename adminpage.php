@@ -9,7 +9,7 @@
 				$prices=array();
 				
 				//connect to database
-				@ $db = new mysqli('localhost', 'root', '', 'EEElectronics');
+				@ $db = new mysqli('localhost', 'root', '', 'eeelectronics');
 				
 				if(mysqli_connect_errno()){
 					echo'Error:Could not connect to database. Please try again later.';
@@ -83,8 +83,8 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="store.php">Store</a></li>
-							<li><a href="computers.html">Computers</a></li>
-							<li><a href="tablets.html">Tablets</a></li>
+							<li><a href="computers.php">Computers</a></li>
+							<li><a href="tablets.php">Tablets</a></li>
 							<li><a href="checkout.php">Checkout</a></li>
 							<li><a href="adminpage.php">Admin page</a></li>
 						</ul>
@@ -92,31 +92,39 @@
 					
 					<div id="rightcolumn">
 						<h1><b>Click here to generate report: </b></h1>
-							<form method="post" action="adminpage.php" >
+							<!--<form method="post" action="adminpage.php" >
 								<div style="text-align:center">
 									<label for="date">Date:</label><input type="Date" name="dateinput" id="date" oninput="this.form.submit()" value="<?php echo $date; ?>">
 								</div>
-							</form>
+							</form>-->
+							
 							<form method="Post" action="addproduct.php">
 								<label for="product_type" class="addproduct_label" class="addproduct_label">Product Type:</label>
 								<select type="text" name="product_type" id="product_type" required class="product_details">
 									<option value="Computer" name="type_computer">Computer</option>
-									<option value="Tablets" name="type_tablet"> Tablet</option>
+									<option value="Tablet" name="type_tablet"> Tablet</option>
 								</select>
-								 
+								
+								<label for="product_id" class="addproduct_label">Product id</label>
+								<input type="text" name="product_id" id="product_id" required class="product_details">
+								
+								<label for="model" class="addproduct_label">Model:</label>
+								<input type="text" name="model" id="model" required class="product_details">
+									
 								<label for="picture" class="addproduct_label">Picture:</label>
-								<input type="file" name="picture" id="picture" required  class="product_details" accept="image/*">
+								<input type="text" name="picture" id="picture" required class="product_details">
 								 
 								<label for="description" class="addproduct_label">Description:</label>
 								<textarea type="description" name="description" id="description" required class="product_details"></textarea>
 								 
 								<label for="price" class="addproduct_label">Price:</label>
-								<input name="price" id="price" required class="product_details">
+								<input type="text" name="price" id="price" required class="product_details">
 								 
 								<input type="reset" value="Clear" id="clear"><br>
 								<input type="submit" value="Add Item" id="submit">
 							</form>
-								<table id="pricesumm" >							
+							
+								<!--<table id="pricesumm" >							
 							
 									<tr class="oddrow">
 										<td>
@@ -142,13 +150,16 @@
 											?>
 										</td>
 									</tr>
-								</table>
+								</table>-->
 					</div>
 				</div>
 				<footer>
 					<small>
-						<p><i>Copyright &copy; 2022 JavaJam Coffee House</i></p>
-						<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+						<p><i>Copyright &copy; 2022 EEElectronics</i></p>
+						<p>Contact us at:
+							<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+							<a href="mailto:wendae@tan.com"><p><i>wendae@tan.com</p></i></a>
+						</p>
 					</small>
 				</footer>
 			</div>
