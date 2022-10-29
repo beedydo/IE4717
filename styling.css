@@ -1,0 +1,287 @@
+/*ALL PAGES*/
+body { 
+		background-color:#bbeafe;
+		background-image: url(bg.png);
+		font-family: Verdana,Arial, sans serif;
+		font-size:0.8em;
+		margin:auto;
+		width:80%; min-width: 800px;
+}
+	 
+/*header{ background-color: #ffffff;
+		background-position: center;
+		margin-top:20px;
+}*/
+
+footer{ border-style:none;
+		text-align:center;
+		background-color: #84d9fe;
+		padding:15px;
+		
+}
+
+nav{	font-weight: bold;
+		text-align: center;
+		font-size: 1.5em;
+		margin-right:auto;
+		min-width: 150px;
+		background-color:#84d9fe;
+			}
+
+nav ul{	list-style-type:none;
+		margin:0px;
+		padding: 0px;
+		overflow:hidden;
+		background-color:#84d9fe;
+		
+		display:flex;
+		justify-content:space-around;
+		}
+		
+nav li {
+		float:left;
+}
+
+nav a {	display:block;
+		padding:8px;
+		text-align:center;
+		padding: 14px 16px 14px 16px;
+		text-decoration:none;
+} 
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+#wrapper { background-color: #84d9fe;
+           min-width:850px;
+		   box-shadow: 4px 4px 4px #330B03;
+} 
+
+#logo {	border-style:none;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		width:300px;
+		height:300px;
+		text-align:center;
+		background-color:white;
+}
+
+h1 {
+    color: #350004;
+    margin-top: 0px;
+    padding: 25px 0px 0px 25px;
+	text-align:center;
+}
+
+#homepage{
+	width:50px;
+	hieght:50px;
+}
+
+
+
+
+
+
+
+/*INDEX PAGE*/
+
+
+
+
+#content {
+			background-color: #a9e5ff;
+			padding-bottom:50px;
+			text-align:center;
+}
+
+#list	{
+	list-style-image: url("bullet.png");
+	padding-right:20px;
+}
+
+#nobullet{
+	list-style-type:none;
+}
+
+#conpic{
+	float:left;
+	width:300px;
+	min-height:150px;
+	padding:0px 150px 0px 50px;
+}
+
+
+
+
+/*MENU PAGE*/
+
+table{
+	margin:auto;
+}
+
+#menu td{
+	padding:10px;
+}
+
+.categories{
+	text-align: center;
+}
+
+.oddrow{
+	background-color:#d1b38e;
+}
+
+input, radio{
+	vertical-align:center;
+}
+
+
+
+
+/*MUSIC PAGE*/
+
+thead{
+	text-align:left;
+	background-color:#E2D1B1;
+}
+
+#performer td{
+	padding:10px;
+}
+
+#shiftp{
+	padding-left:25px;
+}
+
+
+
+/*JOBS PAGE*/
+form {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 15px 0px 15px;
+}
+
+input[type=text] {
+    width: 150px;
+}
+
+input, textarea {
+    font-family: Verdana, Arial, sans-serif;
+    margin-top: 10px;
+	display:inline;
+    font-size: 0.8em;
+}
+
+.jobslabel{
+    float: left;
+    display: block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+
+.jobs{
+	display:block;
+}
+
+.addproduct_label{
+    float: left;
+    display: block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+
+.product_details{
+	display:block;
+}
+#clear {
+    margin-left: 10px;
+}
+
+#submit{
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/*ADMIN PAGE*/
+#Pricesumm{
+	width:80%;
+}
+
+.summary{
+	text-align:center;
+}
+
+.btn{
+	width:30px;
+	height:30px;
+	background:#e3d2b4;
+	color:#d1b390;
+}
+
+.btn:active{
+	box-shadow:2px 2px 1px grey;
+	background-colour:#dab390;
+}
+
+
+
+
+
+/*PRICE SUMMARY PAGE*/
+
+#Dollarsales thead{
+	background:none;
+}
+
+#Dollarsales thead td{
+	text-align:center;
+	border-bottom: 1px solid black;
+}
+
+#Dollarsales tbody td{
+	text-align:center;
+	background:none;
+	border-bottom: 1px dotted black;
+	padding:
+}
+
+
+
+
+
+
+/*Qty summary sales*/
+#Qtysales thead{
+	background:none;
+}
+
+#Qtysales thead td{
+	text-align:center;
+	border-bottom: 1px solid black;
+}
+
+#Qtysales tbody td{
+	text-align:center;
+	background:none;
+	border-bottom: 1px dotted black;
+	padding:
+}
