@@ -1,0 +1,375 @@
+/*ALL PAGES*/
+body { 
+		background-color:#bbeafe;
+		background-image: url(bg.png);
+		font-family: Verdana,Arial, sans serif;
+		font-size:0.8em;
+		margin:auto;
+		width:80%; min-width: 800px;
+}
+
+footer{ border-style:none;
+		text-align:center;
+		background-color: #84d9fe;
+		padding:15px;
+		
+}
+
+nav{	font-weight: bold;
+		text-align: center;
+		font-size: 1.5em;
+		margin-right:auto;
+		min-width: 150px;
+		background-color:#84d9fe;
+			}
+
+nav ul{	list-style-type:none;
+		margin:0px;
+		padding: 0px;
+		overflow:hidden;
+		background-color:#84d9fe;
+		
+		display:flex;
+		justify-content:space-around;
+		}
+		
+nav li {
+		float:left;
+}
+
+nav a {	display:block;
+		padding:8px;
+		text-align:center;
+		padding: 14px 16px 14px 16px;
+		text-decoration:none;
+} 
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+#wrapper { background-color: #84d9fe;
+           min-width:850px;
+		   box-shadow: 4px 4px 4px #330B03;
+} 
+
+#logo {	border-style:none;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		width:300px;
+		height:300px;
+		text-align:center;
+		background-color:white;
+}
+
+h1 {
+    color: #350004;
+    margin-top: 0px;
+    padding: 25px 0px 0px 25px;
+	text-align:center;
+}
+
+#homepage{
+	width:50px;
+	height:50px;
+}
+
+.model{
+	text-align:left; 
+	padding-left:50px; 
+	border-bottom:5px solid gray;
+}
+
+
+
+
+
+/*INDEX PAGE*/
+
+#content {
+			background-color: #a9e5ff;
+			padding-bottom:50px;
+			text-align:center;
+}
+
+
+
+
+
+
+/*STORE PAGE*/
+
+table{
+	margin:auto;
+}
+
+#menu td{
+	padding:10px;
+}
+
+.categories{
+	text-align: center;
+}
+
+.oddrow{
+	background-color:#d1b38e;
+}
+
+input, radio{
+	vertical-align:center;
+}
+
+
+
+
+/*COMPUTER AND TABLETS PAGE*/
+
+thead{
+	text-align:left;
+	background-color:#E2D1B1;
+}
+
+#shiftp{
+	padding-left:25px;
+}
+
+form {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 15px 0px 15px;
+}
+
+input[type=text] {
+    width: 150px;
+}
+
+input, textarea {
+    font-family: Verdana, Arial, sans-serif;
+    margin-top: 10px;
+	display:inline;
+    font-size: 0.8em;
+}
+
+select{
+	font-family: Verdana, Arial, sans-serif;
+    margin-top: 10px;
+	display:inline;
+    font-size: 0.8em;
+}
+
+.addproduct_label{
+    float: left;
+    display: block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.product_details{
+	display:block;
+}
+
+.products{	border:black 1px solid; 
+			width:600px; 
+			background:#72d3fe;
+}
+
+#clear {
+    margin-left: 10px;
+}
+
+#submit{
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/*ADMIN PAGE*/
+#Pricesumm{
+	width:80%;
+}
+
+.summary{
+	text-align:center;
+}
+
+.btn{
+	width:30px;
+	height:30px;
+	background:#e3d2b4;
+	color:#d1b390;
+}
+
+.btn:active{
+	box-shadow:2px 2px 1px grey;
+	background-color:#dab390;
+}
+
+
+
+
+
+/*PRICE SUMMARY PAGE
+
+#Dollarsales thead{
+	background:none;
+}
+
+#Dollarsales thead td{
+	text-align:center;
+	border-bottom: 1px solid black;
+}
+
+#Dollarsales tbody td{
+	text-align:center;
+	background:none;
+	border-bottom: 1px dotted black;
+	padding:
+}
+/* 
+
+
+
+
+
+/*Qty summary sales
+#Qtysales thead{
+	background:none;
+}
+
+#Qtysales thead td{
+	text-align:center;
+	border-bottom: 1px solid black;
+}
+
+#Qtysales tbody td{
+	text-align:center;
+	background:none;
+	border-bottom: 1px dotted black;
+	padding:
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Login Page*/
+
+body {
+    font-family: Arial;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.form-head {
+    color: #191919;
+    font-weight: normal;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.error-message {
+    padding: 7px 10px;
+    background: #fff1f2;
+    border: #ffd5da 1px solid;
+    color: #d6001c;
+    border-radius: 4px;
+    margin: 30px 10px 10px 10px;
+}
+
+.demo-table {
+    background: #ffffff;
+    border-spacing: initial;
+    margin: 15px auto;
+    word-break: break-word;
+    table-layout: auto;
+    line-height: 1.8em;
+    color: #333;
+    border-radius: 4px;
+    padding: 30px;
+    width: 380px;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+.demo-table .label {
+    color: #888888;
+}
+
+.demo-table .field-column {
+    padding: 15px 10px;
+}
+
+.demo-input-box {
+    padding: 13px;
+    border: #CCC 1px solid;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btnLogin {
+    padding: 13px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    border: #5791da 1px solid;
+    font-size: 1.1em;
+}
+
+.response-text {
+    max-width: 380px;
+    font-size: 1.5em;
+    text-align: center;
+    background: #fff3de;
+    padding: 42px;
+    border-radius: 3px;
+    border: #f5e9d4 1px solid;
+    font-family: arial;
+    line-height: 34px;
+    margin: 15px auto;
+}
+
+.terms {
+    margin-bottom: 5px;
+}
+
+.dashboard {
+    background: #d2edd5;
+    text-align: center;
+    margin: 15px auto;
+    line-height: 1.8em;
+    color: #333;
+    border-radius: 4px;
+    padding: 30px;
+    max-width: 400px;
+    border: #c8e0cb 1px solid;
+}
+.error-info {
+    color: #FF0000;
+    margin-left: 10px;
+}
+a.logout-button {
+    color: #09f;
+}

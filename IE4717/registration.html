@@ -1,0 +1,65 @@
+<html>
+<head> 
+	<title>EEElectronics - Registration Page</title> 
+	<meta charset=“utf-8”> 
+	<link rel="stylesheet" href="styling.css">
+</head> 
+
+<body>
+	<div id="wrapper">
+		<div id="main">
+			<nav>
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="store.php">Store</a></li>
+					<li><a href="computers.php">Computers</a></li>
+					<li><a href="tablets.php">Tablets</a></li>
+					<li><a href="checkout.php">Checkout</a></li>
+					<li><a href="login.php">Login page</a></li>
+				</ul>
+			</nav>
+			
+			<div id="content">	
+				<h1>Registration Page</h1>
+				<form action="register.php" method=POST>
+					<table class="registration">
+						<tr>
+							<td>
+								Username:
+								<input type=text name=username><br /><br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Password:
+								<input type=password name=password><br /><br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Password confirmation:
+								<input type=password name=password2><br /><br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type=submit name=submit value=Submit>
+								<input type=reset name=reset value="Reset">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<small>
+				<p><i>Copyright &copy; 2022 EEElectronics</i></p>
+				<p>Contact us at:
+					<a href="mailto:wencong@ng.com"><p><i>wencong@ng.com</p></i></a>
+					<a href="mailto:wendae@tan.com"><p><i>wendae@tan.com</p></i></a>
+				</p>
+			</small>
+		</footer>
+	</div>
+</body>
+</html>
